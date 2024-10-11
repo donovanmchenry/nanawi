@@ -1,0 +1,395 @@
+/* General Body Styling */
+/* General Body Styling */
+body {
+    background: #e6f3ff;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* First Top Bar */
+#top-bar {
+    background: #ffe854;
+    color: #3e2500;
+    padding: 15px 20px; /* Added padding on both top and sides */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#top-bar .logo {
+    font-size: 48px;
+    font-weight: bold;
+    color: #3e2500;
+    margin-left: 20px; /* Adds margin to ensure the logo is not touching the left side */
+}
+
+/* Auth Buttons */
+.auth-buttons {
+    margin-right: 20px;
+}
+
+.auth-buttons .button {
+    background-color: white;
+    color: #ffe854;
+    border: 2px solid #ffe854;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.auth-buttons .button:hover {
+    background-color: #ffe854;
+    color: white;
+}
+
+/* Modernized Navigation Bar */
+#nav-bar {
+    background-color: #3e2500;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adds space between the links */
+    border-bottom: 2px solid #d1e7ff;
+}
+
+.nav-link {
+    color: #ffe854;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #ffe854;
+    color: white;
+}
+
+/* Optional: Add more padding to increase spacing between links */
+.nav-link:not(:last-child) {
+    margin-right: 15px;
+}
+
+/* Auth Links (Sign Up, Log In) */
+#auth-links {
+    background-color: #ffffff;
+    padding: 15px 0;
+    text-align: center;
+    border-top: 1px solid #d1e7ff;
+    border-bottom: 1px solid #d1e7ff;
+}
+
+#auth-links a {
+    color: #ffe854;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+/* Container Layout */
+#container {
+    flex: 1;
+    display: flex;
+    max-width: 1024px;
+    margin: 20px auto;
+    justify-content: space-between;
+    gap: 20px; /* Adds space between columns */
+}
+
+
+/* Left Column (Profile Info) */
+.left-column {
+    flex-basis: 40%;
+    padding: 10px;
+}
+
+.profile-section {
+    display: flex;
+    align-items: flex-start;
+}
+
+.avatar {
+    width: 200px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: 2px solid #d1e7ff;
+}
+
+.profile-info p {
+    margin: 5px 0;
+    color: #ffe854;
+}
+
+/* Contact Section */
+.contacting {
+    border: 2px solid #d1e7ff;
+    padding: 10px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-header {
+    background-color: #ffe854;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid #d1e7ff;
+}
+
+.contact-options {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.contact-options li {
+    margin-bottom: 5px;
+}
+
+.contact-options a {
+    text-decoration: none;
+    color: #ffe854;
+    display: flex;
+    align-items: center;
+}
+
+.contact-options img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+/* Audio Player */
+.player {
+    background-color: #f0faff;
+    padding: 10px;
+    border: 2px solid #d1e7ff;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.player p {
+    color: #ffe854;
+    font-size: 14px;
+}
+
+.player audio {
+    width: 100%;
+}
+
+/* Right Column (Extended Network, Blogs, Friends) */
+.right-column {
+    flex-basis: 58%;
+    padding: 10px;
+}
+
+.extended-network h4 {
+    background-color: #d1e7ff;
+    color: #ffe854;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Latest Entries */
+.latest-entries h4 {
+    background-color: #ffe854;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.latest-entries a {
+    text-decoration: none;
+    color: #ffe854;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Bio Section */
+.blurbs h4 {
+    background-color: #ffe854;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.blurbs p {
+    color: #ffe854;
+    padding: 10px;
+    background-color: #f0faff;
+    border: 1px solid #d1e7ff;
+    border-radius: 10px;
+}
+
+/* Friends Section */
+.friends-section h4 {
+    background-color: #ffe854;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.friends-section p, .friends-count {
+    color: #ffe854;
+}
+
+/* Friends Section */
+.friendCounter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.friendFace {
+    width: calc(25% - 10px);
+    text-align: center; /* Centers the content inside */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the name under the image */
+}
+
+.friendFace img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    border: 2px solid #d1e7ff;
+}
+
+.friendFace b {
+    color: #ffe854;
+    font-size: 12px;
+    text-align: center; /* Ensures the text is centered */
+}
+
+/* Comments Section */
+#comments-section {
+    margin-top: 20px;
+}
+
+.comments-header h4 {
+    background-color: #ffe854;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    margin: 0;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Comment List Styling */
+.comment-list {
+    margin-top: 10px;
+}
+
+/* Individual Comment Box */
+.comment {
+    display: flex;
+    border: 1px solid #d1e7ff;
+    margin-bottom: 10px;
+    background-color: #f0faff;
+    border-radius: 10px;
+}
+
+/* Left Part with Avatar and Username */
+.comment-left {
+    background-color: #e6f3ff;
+    padding: 10px;
+    text-align: center;
+    width: 140px;
+    border-radius: 10px 0 0 10px;
+}
+
+.comment-left b a {
+    text-decoration: none;
+    color: #ffe854;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Avatar inside the comment box */
+.comment-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px; /* Matches the friends' avatar style */
+    margin-bottom: 5px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid #d1e7ff;
+}
+
+/* Right Part with Comment Text and Date */
+.comment-right {
+    flex: 1;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 0 10px 10px 0;
+}
+
+.comment-date {
+    font-size: 12px;
+    color: #ffe854;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.comment-body {
+    margin: 0;
+    color: #ffe854;
+}
+
+/* Footer */
+#footer {
+    background-color: #ffe854;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    border-top: 2px solid #d1e7ff;
+}
+
+/* Style for "Jimmay" */
+.left-column h2 {
+    color: #ffe854; /* Matches the Wii-themed color */
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+/* Style for the "View All Friends" Button */
+.button {
+    background-color: white;
+    color: #ffe854;
+    border: 2px solid #ffe854;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: #ffe854;
+    color: white;
+}
